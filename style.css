@@ -152,14 +152,15 @@ transition:  0.3s ease;
     background-color: rgba(0, 0, 0, 0.607);
     width:50px ;
 }
-.about{
+.about {
+    padding-top: 180px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12% 8%;
     gap: 4em;
     background: black;
 }
+
 .about-img img{
     position: relative;
     width: 550px;
@@ -612,6 +613,11 @@ img {
 
     .about-content h2, .about-content h3, .about-content p {
         text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        padding-top: 120px;
     }
 }
 
