@@ -428,7 +428,8 @@ html {
   color: #333;
   font-size: 16px;
 }
-@media (max-width: 768px) {
+/* تحسين العرض على الشاشات الصغيرة */
+@media (max-width: 992px) {
     .home {
         flex-direction: column;
         text-align: center;
@@ -442,6 +443,21 @@ html {
 
     .home-content h3 {
         font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+        gap: 1em;
+    }
+
+    .img-box img {
+        width: 250px;
+        margin: 0 auto;
     }
 
     .about {
@@ -462,8 +478,74 @@ html {
     .project-box {
         flex-direction: column;
         gap: 1em;
+        padding: 1.5em;
+    }
+
+    .project-box img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 20px;
+        margin-bottom: 2em;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+        text-align: left;
+    }
+
+    .timeline-content {
+        width: 100%;
     }
 }
+
+/* تحسين العرض على الشاشات جدا الصغيرة (موبايل عمودي) */
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h3 {
+        font-size: 22px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .btn-1, .btn-2 {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .about-content h3 {
+        font-size: 48px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .skill-card p {
+        font-size: 14px;
+    }
+}
+
 
 .about-info ul {
   list-style: none;
