@@ -12,13 +12,13 @@
     left: 0;
     width: 100%;
     padding: 35px 12%;
-    background: linear-gradient(135deg, #9b6c6c, #fbc2eb); /* تدرج ألوان أنثوي */
+    background: linear-gradient(135deg, #9b6c6c, #fbc2eb); 
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* يعطي ظل أنيق */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 .logo{
     font-size: 25px;
@@ -66,7 +66,7 @@ transition:  0.3s ease;
 .home {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #9b6c6c, #f1f1f1); /* خلفية ناعمة */
+    background: linear-gradient(135deg, #9b6c6c, #f1f1f1); 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,7 +81,7 @@ transition:  0.3s ease;
 .home-content h3 {
     font-size: 36px;
     font-weight: 500;
-    color: #6c5b7b; /* بنفسجي كلاسيك */
+    color: #6c5b7b; 
     margin-bottom: 10px;
 }
 
@@ -89,14 +89,14 @@ transition:  0.3s ease;
     font-size: 58px;
     line-height: 1.2;
     font-weight: 700;
-    color: #2c2c2c; /* أسود أنيق */
+    color: #2c2c2c; 
     margin-bottom: 20px;
 }
 
 .home-content p {
     font-size: 18px;
     line-height: 1.7;
-    color: #444; /* رمادي داكن */
+    color: #444; 
     margin: 25px 0 30px;
     max-width: 600px;
 }
@@ -428,7 +428,7 @@ html {
   color: #333;
   font-size: 16px;
 }
-/* تحسين العرض على الشاشات الصغيرة */
+
 @media (max-width: 992px) {
     .home {
         flex-direction: column;
@@ -509,7 +509,7 @@ html {
     }
 }
 
-/* تحسين العرض على الشاشات جدا الصغيرة (موبايل عمودي) */
+
 @media (max-width: 480px) {
     .home-content h1 {
         font-size: 32px;
@@ -555,11 +555,11 @@ html {
 .about-info li {
   margin: 10px 0;
   font-size: 16px;
-  color: white; /* يخلي عناصر اللائحة باللون الأبيض */
+  color: white; 
 }
 
 .about-info a {
-  color: #1abc9c; /* الإيميل يبان بلون مميز (أخضر/أزرق) */
+  color: #1abc9c; 
   text-decoration: none;
 }
 img {
@@ -570,6 +570,49 @@ img {
 .container {
     width: 100%;
     padding: 0 5%;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px 5%;
+        gap: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 10% 5%;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-content h2, .about-content h3, .about-content p {
+        text-align: center;
+    }
 }
 
 

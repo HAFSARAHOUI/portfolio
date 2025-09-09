@@ -16,7 +16,7 @@
        <nav class="navbar">
   <a href="#home" class="active">Portfolio</a>
    <a href="#about">About</a>
-<!-- <a href="#experience">Experience</a>-->
+
   <a href="#projects">Projects</a>
   <a href="#education">Education</a>
  
@@ -34,7 +34,7 @@
 
      <div class="btn-box">
        <button class="btn-1" onclick="window.location.href='#about'">About Me</button>
-<!--<button class="btn-2" onclick="window.location.href='#experience'">Experience</button>-->
+
 
      </div>
       </div>
@@ -53,7 +53,7 @@
 A passionate Backend Developer from Morocco, focused on building efficient web applications.  
 I’m constantly learning new technologies and I believe in creativity, equality, and growth.
 </p>
-  <!-- Contact Info -->
+ 
   <div class="about-info">
     <h3>Contact Information</h3>
     <ul class="about-info">
@@ -96,9 +96,7 @@ I’m constantly learning new technologies and I believe in creativity, equality
 </div>
   
     </section>
-   <!--  <section id="experience" class="experience">
-   المحتوى ديال Experience 
-</section>-->
+ 
 <section id="projects" class="projects">
   <h2 class="heading">My <span>Projects</span></h2>
 
@@ -187,13 +185,13 @@ I’m constantly learning new technologies and I believe in creativity, equality
     </section>
    <footer class="footer">
         <div class="social">
-  <!-- LinkedIn -->
+  
   <a href="https://www.linkedin.com/in/hafsa-rahoui-8587102b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
     <i class='bx bxl-linkedin-square'></i>
   </a>
 
 
-  <!-- GitHub -->
+  
   <a href="https://github.com/HAFSARAHOUI" target="_blank">
     <i class='bx bxl-github'></i>
   </a>
@@ -215,12 +213,11 @@ I’m constantly learning new technologies and I believe in creativity, equality
             </li>
             
             <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
         <p class="copyright">© 2025 Hafsa Rahoui. All rights reserved.</p>
     </footer>
-<!-- قبل </body> مباشرة -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <script type="text/javascript">
@@ -229,12 +226,12 @@ I’m constantly learning new technologies and I believe in creativity, equality
   const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from reloading the page
+  event.preventDefault(); 
 
   emailjs.sendForm('service_sq97ka3', 'template_5ipui3w', this)
     .then(function() {
       alert('Message sent successfully!');
-      form.reset(); // Clear the form after sending
+      form.reset(); 
     }, function(error) {
       alert('Failed to send message: ' + JSON.stringify(error));
     });
