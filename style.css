@@ -633,23 +633,24 @@ img {
 }
 
 
+
 section {
-    scroll-margin-top: 120px;
+    padding-top: 120px; 
+    scroll-margin-top: 120px; 
 }
 
+
+.home, .about, .education, .projects, .contact-form {
+    padding-top: 120px; 
+}
 
 
 @media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        padding: 180px 5% 50px; 
-        gap: 2em;
+    .header {
+        height: auto; 
     }
-
-    .home {
-        padding-top: 150px;
+    
+    .home, .about, .education, .projects, .contact-form {
+        padding-top: 160px; 
     }
 }
-
-
-
