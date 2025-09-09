@@ -640,18 +640,26 @@ section {
 }
 
 
+
 .home, .about, .education, .projects, .contact-form {
-    padding-top: 120px; 
+    padding-top: 150px; 
 }
 
 
 @media (max-width: 768px) {
     .home, .about, .education, .projects, .contact-form {
-        padding-top: 180px; 
+        padding-top: calc(100px + 20px); 
     }
     
-    section {
-        scroll-margin-top: 180px;
+    .header {
+        height: auto;
+        padding: 20px 5%;
     }
 }
+
+    
+    section {
+        scroll-margin-top: 120px;
+    }
+
 
