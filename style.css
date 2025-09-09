@@ -646,11 +646,12 @@ section {
 
 
 @media (max-width: 768px) {
-    .header {
-        height: auto; 
+    .home, .about, .education, .projects, .contact-form {
+        padding-top: 180px; 
     }
     
-    .home, .about, .education, .projects, .contact-form {
-        padding-top: 160px; 
+    section {
+        scroll-margin-top: 180px;
     }
 }
+
