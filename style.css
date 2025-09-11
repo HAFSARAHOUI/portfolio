@@ -237,7 +237,7 @@ z-index: 100
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: black;
+    background: linear-gradient(135deg, #9b6c6c, #fbc2eb);
 }
 .footer .social{
     text-align: center;
