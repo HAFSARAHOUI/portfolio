@@ -7,17 +7,14 @@ const skills = [
   { name: "TypeScript", color: "accent" },
   { name: "Node.js", color: "primary" },
   { name: "Python", color: "secondary" },
-  { name: "PostgreSQL", color: "accent" },
+  { name: "MySQL", color: "accent" },
   { name: "Tailwind CSS", color: "primary" },
   { name: "Next.js", color: "secondary" },
-  { name: "Docker", color: "accent" },
-  { name: "AWS", color: "primary" },
+  { name: "Laravel", color: "accent" },
+  { name: "PHP", color: "primary" },
   { name: "Git", color: "secondary" },
-  { name: "GraphQL", color: "accent" },
   { name: "MongoDB", color: "primary" },
-  { name: "Redis", color: "secondary" },
   { name: "Figma", color: "accent" },
-  { name: "CI/CD", color: "primary" },
 ];
 
 const colorClasses: Record<string, string> = {

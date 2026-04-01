@@ -35,8 +35,8 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto mb-10"
         >
-          I craft pixel-perfect, performant web experiences from front to back.
-          Turning complex problems into elegant, scalable solutions.
+         I build web things that work, look great, and don't fall apart at 3am. Full-stack, fast, and weirdly proud of my commit messages.
+
         </motion.p>
 
         <motion.div
@@ -66,9 +66,9 @@ const HeroSection = () => {
           className="flex items-center justify-center gap-6 mb-16"
         >
           {[
-            { icon: Github, href: "#" },
-            { icon: Linkedin, href: "#" },
-            { icon: Mail, href: "#contact" },
+            { icon: Github, href: "https://github.com/HAFSARAHOUI" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/hafsarahoui/" },
+            { icon: Mail, href: "hrworkarea@gmail.com" },
           ].map(({ icon: Icon, href }, i) => (
             <a
               key={i}

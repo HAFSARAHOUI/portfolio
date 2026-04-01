@@ -1,30 +1,35 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    desc: "A full-featured online store with payments, auth, and admin dashboard built with React and Node.js.",
-    tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
+    title: "Nanny Now",
+    image: "/NannyNow.PNG",
+    desc: "A platform connecting families with trusted nannies. Nannies apply to join, admins review and approve profiles, and parents can browse available nannies or post childcare requests that nannies can apply for.",
+    tags: ["Laravel", "PHP", "MySQL", "JavaScript"],
     color: "primary" as const,
   },
   {
-    title: "AI Chat Application",
-    desc: "Real-time messaging app powered by AI with smart suggestions and natural language processing.",
-    tags: ["TypeScript", "OpenAI", "WebSocket", "Tailwind"],
-    color: "secondary" as const,
-  },
-  {
-    title: "Task Management Tool",
-    desc: "Collaborative project management app with drag-and-drop boards, deadlines, and team features.",
-    tags: ["React", "Supabase", "DnD Kit", "Framer Motion"],
+    title: "Ashkid Travel",
+    image: "/AshkidTravel.PNG",
+    desc: "A tourism platform for a Moroccan travel agency showcasing tours and destinations across Morocco. Users can book trips, explore a travel blog, and discover rich information about Moroccan tourism.",
+    tags: ["React", "Laravel", "Node.js", "Tailwind", "MySQL"],
     color: "accent" as const,
   },
   {
-    title: "Portfolio Generator",
-    desc: "Dynamic portfolio builder that lets developers create stunning portfolios with zero configuration.",
-    tags: ["Next.js", "MDX", "Vercel", "Tailwind CSS"],
+    title: "Commerce Manager",
+    image: "/CommerceManager.PNG",
+    desc: "A full-scale company management system with products, invoices, stock tracking, HR, receipts, and detailed reports. Role-based access lets the admin control exactly what each user can see and do.",
+    tags: ["React", "Laravel", "Node.js", "Tailwind", "MySQL"],
+    color: "secondary" as const,
+  },
+  {
+    title: "Portfolio",
+    image: "/Portfolio.PNG",
+    desc: "This very portfolio — a personal website built to showcase my projects, skills, and journey as a developer. Designed with a focus on smooth animations, clean aesthetics, and a great developer experience.",
+    tags: ["React", "Next.js", "Tailwind", "Framer Motion"],
     color: "primary" as const,
   },
 ];
@@ -70,8 +75,17 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`glass-card p-6 group transition-all duration-300 ${colorMap[p.color]}`}
+              className={`glass-card rounded-2xl p-6 group transition-all duration-300 shadow-[0_42px_110px_rgba(0,0,0,0.68)] hover:shadow-[0_50px_130px_rgba(0,0,0,0.78)] ${colorMap[p.color]}`}
             >
+              <div className="relative mb-5 h-48 overflow-hidden rounded-xl border border-border/60 bg-black/20 shadow-[0_20px_50px_rgba(0,0,0,0.42)]">
+                <Image
+                  src={p.image}
+                  alt={p.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
               <h3 className="font-display text-xl font-semibold text-foreground mb-2">
                 {p.title}
               </h3>

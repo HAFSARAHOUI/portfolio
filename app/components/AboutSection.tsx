@@ -33,14 +33,14 @@ const AboutSection = () => {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden glass-card glow-border-purple p-1">
-               <Image
- src="/profileImage.jpeg" 
-  alt="Hafsa"
-  width={300}
-  height={300}
-  className="rounded-full"
-/>
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden glass-card glow-border-purple shadow-[0_30px_80px_rgba(0,0,0,0.7)]">
+                <Image
+                  src="/portfolio.jpeg"
+                  alt="Hafsa"
+                  fill
+                  className="object-cover scale-110"
+                  priority
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl" />
               <div className="absolute -top-4 -left-4 w-20 h-20 bg-primary/20 rounded-full blur-2xl" />
@@ -55,10 +55,8 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              I'm a passionate Full Stack Developer who loves building web applications
-              that are both beautiful and functional. With expertise in modern frameworks
-              and cloud technologies, I bring ideas to life — from database design to
-              polished user interfaces.
+             Full Stack Developer. I design the database, write the API, obsess over the UI, and then wonder why I do all three. The result? Web apps that actually work and don't make people cry.
+
             </p>
 
             <div className="grid gap-4">
